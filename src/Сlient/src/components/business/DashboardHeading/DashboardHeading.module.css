@@ -1,0 +1,10 @@
+.Root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
