@@ -1,4 +1,4 @@
-import classnames from 'classnames';
+import classNames from 'classnames';
 import classes from './Input.module.css';
 import { ChangeEvent, memo } from 'react';
 
@@ -34,12 +34,12 @@ const Input = ({
     onChange?.(event.target.value);
   };
 
-  return (
-    <>
-      {label && <label htmlFor={id}></label>}
+  const inputWithLabel = (
+    <label className={classes.label} htmlFor={id}>
+      {label}
       <input
         {...props}
-        className={classnames(classes.input, modes, [])}
+        className={classNames(classes.input, modes, [])}
         type={type}
         id={id}
         onChange={onChangeHandler}
@@ -47,7 +47,26 @@ const Input = ({
         readOnly={readOnly}
         placeholder={placeholder}
       />
-    </>
+    </label>
+  );
+
+  const inputWithoutLabel = (
+    <input
+      {...props}
+      className={classNames(classes.input, modes, [])}
+      type={type}
+      id={id}
+      onChange={onChangeHandler}
+      value={value}
+      readOnly={readOnly}
+      placeholder={placeholder}
+    />
+  );
+
+  return (
+    <div className={classes.Root}>
+      {label ? inputWithLabel : inputWithoutLabel}
+    </div>
   );
 };
 

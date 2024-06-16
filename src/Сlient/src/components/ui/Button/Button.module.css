@@ -1,3 +1,13 @@
 .button {
   cursor: pointer;
+  color: white;
+  background-color: rebeccapurple;
+  padding: 5px;
+  border: 0;
+}
+
+.link {
+  color: white;
+  background-color: rebeccapurple;
+  padding: 5px;
 }

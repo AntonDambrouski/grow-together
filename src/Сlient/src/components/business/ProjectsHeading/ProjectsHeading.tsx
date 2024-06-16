@@ -1,5 +1,5 @@
 import Input from '@/components/ui/Input/Input';
-import classes from './DashboardHeading.module.css';
+import classes from './ProjectsHeading.module.css';
 import Button from '@/components/ui/Button/Button';
 import { Dropdown, DropdownOptions } from '@/components/ui/Dropdown/Dropdown';
 import { useCallback, useState } from 'react';
@@ -19,7 +19,7 @@ const mockValues: DropdownOptions[] = [
   },
 ];
 
-const DashboardHeading = () => {
+const ProjectsHeading = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const onChange = useCallback((newValue: string) => {
@@ -28,7 +28,7 @@ const DashboardHeading = () => {
 
   return (
     <div className={classes.Root}>
-      <h1>Dashboard</h1>
+      <h1>Projects</h1>
       <div className={classes.filters}>
         <Dropdown options={mockValues} />
         <Input
@@ -43,4 +43,4 @@ const DashboardHeading = () => {
   );
 };
 
-export default DashboardHeading;
+export default ProjectsHeading;

@@ -1,0 +1,17 @@
+.error {
+  color: red;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.image {
+  margin-right: 8px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}

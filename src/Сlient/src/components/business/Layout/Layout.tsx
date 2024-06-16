@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import classes from './Layout.module.css';
-import Container from '../Container/Container';
+import Container from '../../ui/Container/Container';
 
 interface LayoutProps {
   children: ReactNode;

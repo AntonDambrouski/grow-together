@@ -1,12 +1,8 @@
-import Dashboard from '@/components/business/Dashboard/Dashboard';
-import Layout from '@/components/ui/Layout/Layout';
+import SwipeCards from '@/components/business/SwipeCards/SwipeCards';
+import { useState } from 'react';
 
 const Home = () => {
-  return (
-    <Layout title="Home page">
-      <Dashboard />
-    </Layout>
-  );
+  return <SwipeCards />;
 };
 
 export default Home;

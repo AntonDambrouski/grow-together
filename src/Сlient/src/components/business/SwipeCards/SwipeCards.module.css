@@ -1,0 +1,49 @@
+.app {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  margin-top: -100px;
+  padding: 0 25px;
+  color: red;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginButton {
+  position: absolute;
+  left: 50%;
+  bottom: 300px;
+  translate: -50%;
+  text-decoration: none;
+}
+
+.text {
+  text-align: center;
+}
