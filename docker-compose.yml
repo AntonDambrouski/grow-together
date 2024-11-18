@@ -1,0 +1,21 @@
+services:
+  # api:
+  #   image: grow-together.api
+  #   build:
+  #     context: .
+  #     dockerfile: src/server/GrowTogether.Api
+  #   depends_on:
+  #     - client.db
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Docker
+  #     - ASPNETCORE_HTTP_PORTS=8080
+  #   ports:
+  #     - 8080:8080
+
+  client.db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "${SA_PASSWORD}"
+      ACCEPT_EULA: "Y"
+    ports:
+      - 1433:1433
